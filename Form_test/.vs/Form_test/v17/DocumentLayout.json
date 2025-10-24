@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{406D1C3D-4D66-4F68-803E-D92718DE636B}|Form_test\\Form_test.csproj|solutionrelative:form_test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{406D1C3D-4D66-4F68-803E-D92718DE636B}|Form_test\\Form_test.csproj|c:\\c#\u6388\u696D\\form_test\\form_test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{406D1C3D-4D66-4F68-803E-D92718DE636B}|Form_test\\Form_test.csproj|C:\\C#\u6388\u696D\\Form_test\\form_test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{406D1C3D-4D66-4F68-803E-D92718DE636B}|Form_test\\Form_test.csproj|solutionrelative:form_test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{406D1C3D-4D66-4F68-803E-D92718DE636B}|Form_test\\Form_test.csproj|C:\\C#\u6388\u696D\\Form_test\\form_test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{406D1C3D-4D66-4F68-803E-D92718DE636B}|Form_test\\Form_test.csproj|solutionrelative:form_test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{406D1C3D-4D66-4F68-803E-D92718DE636B}|Form_test\\Form_test.csproj|c:\\c#\u6388\u696D\\form_test\\form_test\\testboutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{406D1C3D-4D66-4F68-803E-D92718DE636B}|Form_test\\Form_test.csproj|C:\\C#\u6388\u696D\\Form_test\\form_test\\testboutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{406D1C3D-4D66-4F68-803E-D92718DE636B}|Form_test\\Form_test.csproj|solutionrelative:form_test\\testboutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{406D1C3D-4D66-4F68-803E-D92718DE636B}|Form_test\\Form_test.csproj|c:\\c#\u6388\u696D\\form_test\\form_test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{406D1C3D-4D66-4F68-803E-D92718DE636B}|Form_test\\Form_test.csproj|solutionrelative:form_test\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\C#\u6388\u696D\\Form_test\\Form_test\\Form1.cs",
+              "RelativeDocumentMoniker": "Form_test\\Form1.cs",
+              "ToolTip": "C:\\C#\u6388\u696D\\Form_test\\Form_test\\Form1.cs*",
+              "RelativeToolTip": "Form_test\\Form1.cs*",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T04:55:00.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "TestBoutton.cs",
               "DocumentMoniker": "C:\\C#\u6388\u696D\\Form_test\\Form_test\\TestBoutton.cs",
               "RelativeDocumentMoniker": "Form_test\\TestBoutton.cs",
@@ -43,20 +56,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\C#\u6388\u696D\\Form_test\\Form_test\\Form1.cs",
-              "RelativeDocumentMoniker": "Form_test\\Form1.cs",
-              "ToolTip": "C:\\C#\u6388\u696D\\Form_test\\Form_test\\Form1.cs*",
-              "RelativeToolTip": "Form_test\\Form1.cs*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAqwBgAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T04:55:00.001Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\C#\u6388\u696D\\Form_test\\Form_test\\Program.cs",
               "RelativeDocumentMoniker": "Form_test\\Program.cs",
@@ -69,7 +69,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [\u30C7\u30B6\u30A4\u30F3]",
               "DocumentMoniker": "C:\\C#\u6388\u696D\\Form_test\\Form_test\\Form1.cs",
               "RelativeDocumentMoniker": "Form_test\\Form1.cs",

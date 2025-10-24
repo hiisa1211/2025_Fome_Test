@@ -34,6 +34,8 @@ namespace Form_test
                     //ボタン内のテキストを追加
                     testBoutton.Text = "あいうえお";
 
+                    testBoutton.Click += hogehogeClick; 
+
                     //コントロールにボタンを追加
                     Controls.Add(testBoutton);
                 }
@@ -42,8 +44,9 @@ namespace Form_test
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void hogehogeClick(object sender, EventArgs e)
         {
+            MessageBox.Show("クリックされてしまいました");
 
         }
 

@@ -69,6 +69,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.MouseHover += new System.EventHandler(this.button1_Click_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
