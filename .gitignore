@@ -19,7 +19,7 @@
 x64/
 [Bb]in/
 [Oo]bj/
-
+.vs/
  
 
 # MSTest test Results
@@ -27,7 +27,6 @@ x64/
 [Bb]uild[Ll]og.*
 
  
-
 *_i.c
 *_p.c
 *_i.h
@@ -53,7 +52,6 @@ x64/
 *.log
 *.svclog
 *.scc
-
  
 
 # Visual C++ cache files
