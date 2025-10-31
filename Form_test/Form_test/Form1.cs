@@ -16,14 +16,23 @@ namespace Form_test
     {
         public Form1()
         {
+            //constをつけると初期化時のみ値の変更が可能になる
+            const int BUTTON_SIZE_X = 100;
+            const int BUTTON_SIZE_Y = 100;
+
+            const int BOARD_SIZE_X = 3;
+            const int BOARD_SIZE_Y = 3;
+            
+
             InitializeComponent();
-            for(int i=0;i<4;i++)
-            {
-                for (int j = 0; j < 6; j++)
+            for(int i=0;i<BOARD_SIZE_X ;i++)
+            { 
+                for (int j = 0; j < BOARD_SIZE_Y ; j++)
                 {
 
                     //インスタンスの生成
-                    TestBoutton testBoutton = new TestBoutton(new Point(50 * j, 50 * i), new Size(50, 50),"あ");
+                    TestBoutton testBoutton = new TestBoutton(new Point(BUTTON_SIZE_X*i, BUTTON_SIZE_Y *j)
+                        , new Size(BUTTON_SIZE_X , BUTTON_SIZE_Y ),"");
 
 
                     //コントロールにボタンを追加

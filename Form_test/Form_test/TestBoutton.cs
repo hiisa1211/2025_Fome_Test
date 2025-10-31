@@ -10,21 +10,43 @@ namespace Form_test
 {
     internal class TestBoutton : Button
     {
-         public TestBoutton(Point position,Size size,string text)
+        
+        
+        private Color _onColor = Color.Red;
+        private Color _offColor = Color.White;
+
+        private bool _enable;
+
+        public void SetEnable(bool on)
+        {
+            _enable = on;
+            if (on)
+            {
+                BackColor =_onColor;
+            }
+            else
+            {
+                BackColor = _offColor;
+            }
+        }
+
+        public TestBoutton(Point position,Size size,string text)
         {
             //ボタンの位置
             Location = position;
-            //
+            //ボタンの大きさ
             Size = size;
             //
             Text = text;
+
+            SetEnable(false);
 
 
             Click += ClickEvent;
         }
         private void ClickEvent(object sender, EventArgs e)
         {
-            MessageBox.Show("クリックされてしまいました");
+            SetEnable(!_enable);
 
         }
     }
