@@ -23,18 +23,8 @@ namespace Form_test
                 {
 
                     //インスタンスの生成
-                    TestBoutton testBoutton = new TestBoutton();
+                    TestBoutton testBoutton = new TestBoutton(new Point(50 * j, 50 * i), new Size(50, 50),"あ");
 
-                    //ボタンの位置を設定
-                    testBoutton.Location = new Point(50 * j, 50 * i);
-
-                    //ボタンの大きさを設定
-                    testBoutton.Size = new Size(50, 50);
-
-                    //ボタン内のテキストを追加
-                    testBoutton.Text = "あいうえお";
-
-                    testBoutton.Click += hogehogeClick; 
 
                     //コントロールにボタンを追加
                     Controls.Add(testBoutton);
@@ -44,21 +34,18 @@ namespace Form_test
 
         }
 
-        private void hogehogeClick(object sender, EventArgs e)
-        {
-            MessageBox.Show("クリックされてしまいました");
-
-        }
+        
 
         private void button1_Click_1(object sender, EventArgs e)
         {
             
-            MessageBox.Show("C#の世界へようこそ！");
+            MessageBox.Show("クリック");
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
+        
     }
 }
