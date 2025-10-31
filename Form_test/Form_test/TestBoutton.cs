@@ -11,10 +11,11 @@ namespace Form_test
     internal class TestBoutton : Button
     {
         
-        
+        //on赤
         private Color _onColor = Color.Red;
+        //off白
         private Color _offColor = Color.White;
-
+        //変数
         private bool _enable;
 
         public void SetEnable(bool on)
