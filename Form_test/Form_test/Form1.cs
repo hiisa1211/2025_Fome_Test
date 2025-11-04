@@ -48,12 +48,24 @@ namespace Form_test
                     Controls.Add(testBoutton);
                 }
             }
-            GetTestButton(0,0).SetEnable(true);
+            Random rand = new Random();
+            for (int x = 0; x < 3; x++)
+            {
+                for (int y = 0; y < 3; y++)
+                {
+                    bool randomBool = rand.Next(2) == 0; // 0ならtrue、1ならfalse
+                    GetTestButton(x, y).SetEnable(randomBool);
+                   
+                }
+
+            }
+            
 
         }
 
         public TestButton GetTestButton(int x,int y)
         {
+
             //配列外参照対策null=何もしない
             if (x < 0 || x >= BOARD_SIZE_X) return null;
             if (y < 0 || y >= BOARD_SIZE_Y) return null;

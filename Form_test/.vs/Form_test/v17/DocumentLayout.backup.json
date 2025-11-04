@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "Form_test\\Form1.cs",
               "ToolTip": "C:\\C#\u6388\u696D\\Form_test\\Form_test\\Form1.cs*",
               "RelativeToolTip": "Form_test\\Form1.cs*",
-              "ViewState": "AgIAACAAAAAAAAAAAAAUwCkAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAADwvyoAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T04:55:00.001Z",
               "EditorCaption": ""
@@ -49,7 +49,7 @@
               "RelativeDocumentMoniker": "Form_test\\TestButton.cs",
               "ToolTip": "C:\\C#\u6388\u696D\\Form_test\\Form_test\\TestButton.cs*",
               "RelativeToolTip": "Form_test\\TestButton.cs*",
-              "ViewState": "AgIAADgAAAAAAAAAAADwvz4AAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAwFwAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T05:06:06.239Z",
               "EditorCaption": ""
@@ -62,7 +62,7 @@
               "RelativeDocumentMoniker": "Form_test\\Program.cs",
               "ToolTip": "C:\\C#\u6388\u696D\\Form_test\\Form_test\\Program.cs",
               "RelativeToolTip": "Form_test\\Program.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBIAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T04:44:53.402Z",
               "EditorCaption": ""
@@ -73,10 +73,11 @@
               "Title": "Form1.cs [\u30C7\u30B6\u30A4\u30F3]",
               "DocumentMoniker": "C:\\C#\u6388\u696D\\Form_test\\Form_test\\Form1.cs",
               "RelativeDocumentMoniker": "Form_test\\Form1.cs",
-              "ToolTip": "C:\\C#\u6388\u696D\\Form_test\\Form_test\\Form1.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "RelativeToolTip": "Form_test\\Form1.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "ToolTip": "C:\\C#\u6388\u696D\\Form_test\\Form_test\\Form1.cs [\u30C7\u30B6\u30A4\u30F3]*",
+              "RelativeToolTip": "Form_test\\Form1.cs [\u30C7\u30B6\u30A4\u30F3]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T02:50:09.156Z"
+              "WhenOpened": "2025-10-21T02:50:09.156Z",
+              "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
             }
           ]
         }

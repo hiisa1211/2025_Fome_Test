@@ -62,11 +62,57 @@ namespace Form_test
             SetEnable(!_enable);
         }
 
-        
+
         private void ClickEvent(object sender, EventArgs e)
         {
-            _form1.GetTestButton(_x,_y).Toggle() ;
+            //楽な書方
+            //_form1.GetTestButton(_x._y)?.Toggli();
 
+            //かっこいい書き方
+            for (int i = 0; i < _toggleData.Length; i++)
+            {
+                var data = _toggleData[i];
+                var button = _form1.GetTestButton(_x + data[0], _y + data[1]);
+                if (button != null)
+                {
+                    button.Toggle();
+                }
+            }
+            bool g1 = true;
+            bool g2 = true;
+            for (int x = 0; x < 3; x++)
+            {
+                for (int y = 0; y < 3; y++)
+                {
+                    if (_form1.GetTestButton(x, y).BackColor == _onColor) g1 = false;
+                    if (_form1.GetTestButton(x, y).BackColor == _offColor) g1 = false;
+                }
+            }
+            if (g1 == true || g2 == true)
+            {
+                CuriaButton( new Size(20, 50),"もう一度やり直す");
+            }
+                
         }
+        private void CuriaButton( Size size, string text)
+        {
+            Click += ClickEvent1;
+        }
+        private void ClickEvent1(object sender, EventArgs e)
+        {
+            //InitForm(); // ← ボタンを押したら初期化処理を再実行
+        }
+
+
+
+        private int[][] _toggleData =
+        {
+            new int[] {0,0},
+            new int[] {1, 0 },
+            new int[] {-1, 0 },
+            new int[] {0, 1 },
+            new int[] {0, -1 },
+
+        };
     }
 }
