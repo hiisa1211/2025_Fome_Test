@@ -39,8 +39,7 @@ namespace Form_test
 
                     //インスタンスの生成
                     TestButton testBoutton = 
-                        new TestButton(this,
-                            new Point(BUTTON_SIZE_X * i, BUTTON_SIZE_Y * j), 
+                        new TestButton(this,j,i,
                             new Size(BUTTON_SIZE_X, BUTTON_SIZE_Y), "");
 
                     _buttonArray[j, i] = testBoutton;

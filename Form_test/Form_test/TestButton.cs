@@ -17,18 +17,26 @@ namespace Form_test
         private Color _offColor = Color.White;
         //変数
         private bool _enable;
-
+        //formの参照
         private Form1 _form1;
 
-        public TestButton(Form1 form1, Point position, Size size, string text)
+        //横位置
+        private int _x;
+        //縦位置
+        private int _y;
+        public TestButton(Form1 form1, int x,int y, Size size, string text)
         {
             //Form1の参照
             _form1 = form1;
+            //横の位置を保管
+            _x = x;
+            //縦の位置を保管
+            _y = y;
             //ボタンの位置
-            Location = position;
+            Location = new Point(x*size.Width,y*size.Height);
             //ボタンの大きさ
             Size = size;
-            //
+            //文字
             Text = text;
 
             SetEnable(false);
@@ -52,7 +60,7 @@ namespace Form_test
         
         private void ClickEvent(object sender, EventArgs e)
         {
-            _form1.GetTestButton(1,1).SetEnable(!_enable);
+            _form1.GetTestButton(_x,_y).SetEnable(!_enable);
 
         }
     }
