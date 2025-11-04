@@ -57,10 +57,15 @@ namespace Form_test
             }
         }
 
+        public void Toggle()
+        {
+            SetEnable(!_enable);
+        }
+
         
         private void ClickEvent(object sender, EventArgs e)
         {
-            _form1.GetTestButton(_x,_y).SetEnable(!_enable);
+            _form1.GetTestButton(_x,_y).Toggle() ;
 
         }
     }

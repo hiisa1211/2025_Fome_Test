@@ -54,6 +54,10 @@ namespace Form_test
 
         public TestButton GetTestButton(int x,int y)
         {
+            //配列外参照対策null=何もしない
+            if (x < 0 || x >= BOARD_SIZE_X) return null;
+            if (y < 0 || y >= BOARD_SIZE_Y) return null;
+
             return _buttonArray[x, y];
         } 
 
