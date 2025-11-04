@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Form_test
 {
-    internal class TestBoutton : Button
+    public class TestButton : Button
     {
         
         //on赤
@@ -18,6 +18,24 @@ namespace Form_test
         //変数
         private bool _enable;
 
+        private Form1 _form1;
+
+        public TestButton(Form1 form1, Point position, Size size, string text)
+        {
+            //Form1の参照
+            _form1 = form1;
+            //ボタンの位置
+            Location = position;
+            //ボタンの大きさ
+            Size = size;
+            //
+            Text = text;
+
+            SetEnable(false);
+
+
+            Click += ClickEvent;
+        }
         public void SetEnable(bool on)
         {
             _enable = on;
@@ -31,23 +49,10 @@ namespace Form_test
             }
         }
 
-        public TestBoutton(Point position,Size size,string text)
-        {
-            //ボタンの位置
-            Location = position;
-            //ボタンの大きさ
-            Size = size;
-            //
-            Text = text;
-
-            SetEnable(false);
-
-
-            Click += ClickEvent;
-        }
+        
         private void ClickEvent(object sender, EventArgs e)
         {
-            SetEnable(!_enable);
+            _form1.GetTestButton(1,1).SetEnable(!_enable);
 
         }
     }
