@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 
 namespace Form_test
 {
@@ -39,7 +40,7 @@ namespace Form_test
             //文字
             Text = text;
 
-            SetEnable(false);
+            //SetEnable(false);
 
 
             Click += ClickEvent;
@@ -84,23 +85,38 @@ namespace Form_test
             {
                 for (int y = 0; y < 3; y++)
                 {
-                    if (_form1.GetTestButton(x, y).BackColor == _onColor) g1 = false;
-                    if (_form1.GetTestButton(x, y).BackColor == _offColor) g1 = false;
+                    var btn = _form1.GetTestButton(x, y);
+                    if (btn.BackColor != _onColor) g1 = false;
+                    if (btn.BackColor != _offColor) g2 = false;
+
                 }
             }
             if (g1 == true || g2 == true)
             {
-                CuriaButton( new Size(20, 50),"もう一度やり直す");
+                var result = MessageBox.Show("クリアしました！もう一度チャレンジしますか？", "ゲームクリア", MessageBoxButtons.YesNo);
+
+                if (result == DialogResult.Yes)
+                {
+                    _form1.ResetGame(); // 再スタート
+                }
+                else
+                {
+                    Application.Exit(); // アプリケーションを終了
+                }
+
+
+
             }
-                
+
         }
-        private void CuriaButton( Size size, string text)
+        public void CuriaButton( Size size, string text)
         {
+
             Click += ClickEvent1;
         }
         private void ClickEvent1(object sender, EventArgs e)
         {
-            //InitForm(); // ← ボタンを押したら初期化処理を再実行
+             //Form(); // ← ボタンを押したら初期化処理を再実行
         }
 
 

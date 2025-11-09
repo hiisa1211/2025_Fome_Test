@@ -27,6 +27,8 @@ namespace Form_test
         private TestButton[,] _buttonArray;
 
 
+
+
         public Form1()
         {
 
@@ -38,8 +40,8 @@ namespace Form_test
                 {
 
                     //インスタンスの生成
-                    TestButton testBoutton = 
-                        new TestButton(this,j,i,
+                    TestButton testBoutton =
+                        new TestButton(this, j, i,
                             new Size(BUTTON_SIZE_X, BUTTON_SIZE_Y), "");
 
                     _buttonArray[j, i] = testBoutton;
@@ -48,19 +50,23 @@ namespace Form_test
                     Controls.Add(testBoutton);
                 }
             }
-            Random rand = new Random();
-            for (int x = 0; x < 3; x++)
-            {
-                for (int y = 0; y < 3; y++)
-                {
-                    bool randomBool = rand.Next(2) == 0; // 0ならtrue、1ならfalse
-                    GetTestButton(x, y).SetEnable(randomBool);
-                   
-                }
+            ResetGame();
+        }
 
+
+
+        public void ResetGame()
+        {
+            Random rand = new Random();
+            for (int x = 0; x < BOARD_SIZE_X; x++)
+            {
+                for (int y = 0; y < BOARD_SIZE_Y; y++)
+                {
+                    bool randomBool = rand.Next(2) == 0;
+                    GetTestButton(x, y).SetEnable(randomBool);
+                }
             }
             
-
         }
 
         public TestButton GetTestButton(int x,int y)
@@ -75,11 +81,14 @@ namespace Form_test
 
 
 
-        private void button1_Click_1(object sender, EventArgs e)
+        public  void button1_Click_1(object sender, EventArgs e)
         {
 
-            MessageBox.Show("クリック");
+            //MessageBox.Show("クリアしました。\nもう一度やり直すにはクリックしてください");
+
         }
+        
+        
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
