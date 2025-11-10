@@ -79,6 +79,7 @@ namespace Form_test
                     button.Toggle();
                 }
             }
+            //そろっているか確認
             bool g1 = true;
             bool g2 = true;
             for (int x = 0; x < 3; x++)

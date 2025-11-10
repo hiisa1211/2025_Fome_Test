@@ -54,7 +54,7 @@ namespace Form_test
         }
 
 
-
+        //初期場面をランダムにする
         public void ResetGame()
         {
             Random rand = new Random();
@@ -84,7 +84,7 @@ namespace Form_test
         public  void button1_Click_1(object sender, EventArgs e)
         {
 
-            //MessageBox.Show("クリアしました。\nもう一度やり直すにはクリックしてください");
+            //MessageBox.Show("クリック");
 
         }
         
