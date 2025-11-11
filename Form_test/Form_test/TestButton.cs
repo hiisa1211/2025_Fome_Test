@@ -85,7 +85,7 @@ namespace Form_test
             for (int x = 0; x < 3; x++)
             {
                 for (int y = 0; y < 3; y++)
-                {
+                {   
                     var btn = _form1.GetTestButton(x, y);
                     if (btn.BackColor != _onColor) g1 = false;
                     if (btn.BackColor != _offColor) g2 = false;
@@ -94,6 +94,7 @@ namespace Form_test
             }
             if (g1 == true || g2 == true)
             {
+                //続けるか確認
                 var result = MessageBox.Show("クリアしました！もう一度チャレンジしますか？", "ゲームクリア", MessageBoxButtons.YesNo);
 
                 if (result == DialogResult.Yes)
